@@ -5,11 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Scanner;
 import java.util.Date;
 public class DbManager {
-    static    String driver        = "org.mariadb.jdbc.Driver";
-    static    String url           = "jdbc:mysql://localhost:3306/hague1";
-    static    String uId           = "root";
-    static    String uPwd          = "1234";
-
+   
     static    Connection          conn =null;
     static    PreparedStatement   pstmt = null;
     static    ResultSet           rs;
