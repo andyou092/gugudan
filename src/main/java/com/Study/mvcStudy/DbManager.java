@@ -27,10 +27,6 @@ public class DbManager {
                     System.out.println("이름을 입력해주세요");
                      String name= sc.nextLine();
                     insert(name);
-                            //      pstmt.close();
-                             //     conn.close();
-
-
             }
 
         } catch (ClassNotFoundException e) { System.out.println("드라이버 로드 실패");
