@@ -5,11 +5,15 @@ import java.text.SimpleDateFormat;
 import java.util.Scanner;
 import java.util.Date;
 public class DbManager {
+<<<<<<< HEAD
     static    String driver      
     static    String url        
     static    String uId         
     static    String uPwd      
 
+=======
+   
+>>>>>>> ffa3c55ad42df550b99dd500ba1ee677237a8cb2
     static    Connection          conn =null;
     static    PreparedStatement   pstmt = null;
     static    ResultSet           rs;
