@@ -6,6 +6,7 @@ import java.util.Scanner;
 import java.util.Date;
 public class DbManager {
 
+
     static    String driver  ;
     static    String url     ;
     static    String uId;
