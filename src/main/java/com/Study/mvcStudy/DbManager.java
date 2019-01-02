@@ -6,24 +6,19 @@ import java.util.Scanner;
 import java.util.Date;
 public class DbManager {
 
-
-    static    String driver  ;
-    static    String url     ;
-    static    String uId;
-    static    String uPwd      ;
-
     static    Connection          conn =null;
     static    PreparedStatement   pstmt = null;
     static    ResultSet           rs;
     static Scanner sc = new Scanner(System.in);
 
     public static void main (String... args){
-        Date dataInfo= new Date();
+        dbConnectInfo dbInfo = new dbConnectInfo();
+        Date dateInfo= new Date();
         SimpleDateFormat transFormat = new SimpleDateFormat("yyyy-MM-dd");
-        String date = transFormat.format(dataInfo);
+        String date = transFormat.format(dateInfo);
         try {
-            Class.forName(driver);
-            conn=   DriverManager.getConnection(url, uId, uPwd  );
+            Class.forName(dbInfo.driver);
+            conn=   DriverManager.getConnection(dbInfo.url, dbInfo.uId, dbInfo.uPwd  );
             if( conn != null ){ System.out.println("데이터 베이스 접속 성공");
 
                     System.out.println("이름을 입력해주세요");
