@@ -1,4 +1,4 @@
-﻿package com.Study.mvcStudy;
+package com.Study.mvcStudy;
 
 import java.sql.*;
 import java.text.SimpleDateFormat;
@@ -6,9 +6,9 @@ import java.util.Scanner;
 import java.util.Date;
 public class DbManager {
 
-    static    Connection          conn =null;
-    static    PreparedStatement   pstmt = null;
-    static    ResultSet           rs;
+    static public   Connection          conn =null;
+    static  public   PreparedStatement   pstmt = null;
+    static  public   ResultSet           rs;
     static Scanner sc = new Scanner(System.in);
 
     public static void main (String... args){

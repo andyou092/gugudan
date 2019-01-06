@@ -23,13 +23,15 @@ buildscript {
 
     configurations {
             providedRuntime
-        }
+    }
 
 
 
 
     dependencies {
+        //톰캣
         providedRuntime "org.springframework.boot:spring-boot-starter-tomcat"
+        //web설정
         compile "org.springframework.boot:spring-boot-starter-web"
         //디비설정   
         compile "org.mybatis.spring.boot:mybatis-spring-boot-starter:$mybatis_spring_boot_starter_version"
