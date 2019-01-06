@@ -7,6 +7,7 @@
     <title>JSP</title>
 </head>
 <body>
+
     <c:forEach var="i"  begin="1" end="9" step="1">
        ${list}X${i}=  <c:out value="${list*i}"/>
 
